@@ -54,3 +54,87 @@
 .info2{
     text-align: right;
 }
+.about-content h1 {
+    font-size: 5vw;
+    line-height: .9;
+}
+
+.about {
+    margin-top: 12rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-content {
+    flex: 9;
+    position: sticky;
+    left: 0;
+    top: 3rem;
+}
+
+.about-txt{
+    flex: 3;
+}
+
+.abtitle{
+    margin-bottom: 1rem;
+}
+
+.txt-title{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.txt1 {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+.txt2 {
+    line-height: 1.5;
+    margin-bottom: 6rem;
+}
+.biography-grid {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: "GFS Didot", serif;
+}
+.biography-content h1{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+.biography-content p {
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-bottom: 6rem;
+}
+.biography-grid p{
+    font-size: 1.5rem;
+}
+.biography-grid div {
+    display: flex;
+    flex-direction: column;
+}
+
+.biography-grid span {
+    font-size: 1rem;
+}
+.timeline-content{
+    margin-top: 6rem;
+}
+.timeline-table {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid #000;
+    gap: 1rem;
+}
+.tlyear{
+    font-size: 6rem;
+}
+
+.content-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

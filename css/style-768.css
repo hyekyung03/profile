@@ -43,4 +43,27 @@
     .hero-video {
         
     }
+    .about {
+        margin-top: 12rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .about-content h1 {
+        font-size: 4rem;
+        line-height: .9;
+    }
+
+    .about-content {
+        /* flex: 9; */
+        position: sticky;
+        left: 0;
+        top: 0;
+        background: #fff;
+        width: 100%;
+        padding: 2rem 0;
+    }
+}
+@media (max-width:320px){
+    
 }

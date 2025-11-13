@@ -17,4 +17,7 @@
     .hero-video {
         
     }
+    .about-txt {
+    flex: 8;
+}
 }
