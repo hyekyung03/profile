@@ -3,8 +3,11 @@
     text-align: center;
 }
 
-.hero-section{
-   
+.hero-section .point-desc{
+    color: var(--point-color);
+}
+.point-desc.year{
+    color: #000;
 }
 
 .hero-section h1{
@@ -23,6 +26,7 @@
     /* top: 31%; */
     vertical-align: super;
     margin-left: -1vw;
+    color: #000;
 }
 
 .hero-video {
@@ -58,7 +62,10 @@
     font-size: 5vw;
     line-height: .9;
 }
-
+/* .about-content p{
+    line-height: 1.5;
+    font-size: 1rem;
+} */
 .about {
     margin-top: 12rem;
     display: flex;
@@ -93,6 +100,16 @@
     line-height: 1.5;
     margin-bottom: 6rem;
 }
+.biography{
+    position: relative;
+}
+.biography-content {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
 .biography-grid {
     display: flex;
     justify-content: space-between;
@@ -122,6 +139,9 @@
 .timeline-content{
     margin-top: 6rem;
 }
+.timeline-content>div:last-of-type{
+    border-bottom:none!important;
+}
 .timeline-table {
     display: flex;
     justify-content: space-between;
@@ -129,12 +149,63 @@
     border-bottom: 1px solid #000;
     gap: 1rem;
 }
-.tlyear{
+.tlyear {
     font-size: 6rem;
+    padding-right: 0.7rem;
 }
 
 .content-list{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+.timeline-table .tlyear{
+    color: #A47864;
+}
+.skill {
+    background-color: #000;
+    color: #fff;
+    padding: 6rem 0;
+}
+.skill .skti{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+.skilltitle h1+p {
+    font-size: 1rem;
+    margin-bottom: 6rem;
+    line-height: 1.5;
+}
+.skill-content-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px,1fr));
+    gap: 5rem 3rem;
+}
+
+.sk-txt{
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.sk-txt+p{
+    line-height: 1.5;
+}
+.popup-slider{ 
+    width: 100%;
+}
+.popup-slider h4{
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+.pop-tl {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+.popup-title p{
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+.popup {
+    padding: 6rem 0;
 }

@@ -63,7 +63,48 @@
         width: 100%;
         padding: 2rem 0;
     }
+    .tlyear {
+        font-size: 4rem;
+        padding-right: 0.7rem;
+    }
+    .skill-content-grid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(50px,1fr));
+        gap: 3rem 3rem;
+    }
+    .biography-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem 1rem;
+        text-align: center;
+        font-family: "GFS Didot", serif;
+    }
+    .biography-content h1 {
+    font-size: 4rem;
+    line-height: .9;
+    }
+    .skill .skti {
+    font-size: 4rem;
+    line-height: .9;
+    margin-bottom: 1rem;
+    }
+    .pop-tl{
+    font-size: 4rem;
+    line-height: .9;
+    }
+
 }
-@media (max-width:320px){
-    
+@media (max-width:450px){
+    .timeline-table {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+        border-bottom: 1px solid #000;
+        gap: 1rem;
+        flex-direction: column-reverse;
+    }
+    .tlyear {
+        font-size: 3rem;
+        padding-right: 0.7rem;
+    }
 }

@@ -1,5 +1,6 @@
 :root{
     --main-color: #000;
+    --point-color:#A47864;
     --heading1:1.6rem;
     --heading2:1.4rem;
     --heading3:1.25rem;
@@ -12,12 +13,7 @@
     --lnh140:1.4;
 }
 
-@media(min-width:1920px){
-    main{
-        width: 1920px;
-        margin: 0 auto;
-    }
-}
+
 .allura{
   font-family: "Allura", cursive;
   font-style: normal;
@@ -51,6 +47,17 @@ html{
 .common-frame{
     width: auto;
     margin: 0 3rem;
+}
+
+.pointc{
+    color: var(--point-color);
+}
+
+@media(min-width:2000px){
+    main{
+        width: 1920px;
+        margin: 0 auto;
+    }
 }
 @media (max-width:1024px){
     html{
