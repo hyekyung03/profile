@@ -1,17 +1,21 @@
 @media (max-width:768px){
+    .pc{
+        display: none;
+    }
+    .mo{
+        display: block;
+    }
     .hero-section h1 {
-    /* font-size: 86px; */
+    font-size: 18vw;
     }
     .hero-section {
-        padding-top: 15vh;
+        /* padding-top: 15vh; */
         height: 100vh;
         box-sizing: border-box;
     }
     .year {
     
     }
-  
-   
 
     .information>* {
         /* flex: 1;
@@ -50,7 +54,7 @@
         flex-direction: column;
     }
     .about-content h1 {
-        font-size: 4rem;
+        font-size: 2.5rem;
         line-height: .9;
     }
 
@@ -80,17 +84,34 @@
         font-family: "GFS Didot", serif;
     }
     .biography-content h1 {
-    font-size: 4rem;
-    line-height: .9;
+        font-size: 2.5rem;
+        line-height: .9;
     }
     .skill .skti {
-    font-size: 4rem;
+    font-size: 2.5rem;
     line-height: .9;
     margin-bottom: 1rem;
     }
     .pop-tl{
-    font-size: 4rem;
+    font-size: 2.5rem;
     line-height: .9;
+    }
+    .esbanner-dp {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .sy {
+        padding-top: 5rem;
+    }
+    .es-tl, .te-tl, .poster-tl {
+    font-size: 2.5rem;
+}
+    .tebanner-dp{
+        flex-direction: column;
+        gap:.5rem;
+    }
+    .pr-title{
+        flex-direction: column;
     }
 
 }

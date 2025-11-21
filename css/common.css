@@ -43,10 +43,14 @@ h4{
 html{
     font-size: 20px;
     font-family: 'Pretendard',sans-serif;
+    scroll-behavior: smooth;
 }
 .common-frame{
     width: auto;
     margin: 0 3rem;
+}
+p{
+    line-height: 1.5;
 }
 
 .pointc{

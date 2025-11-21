@@ -20,6 +20,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=GFS+Didot&display=swap" rel="stylesheet">
 
+    <!-- 헤더 -->
+    <script src="./js/header.js"></script>
     <!-- 뿅.js -->
      <script src="./js/bbyong.js"></script>
      <link rel="stylesheet" href="./css/interaction.css">
@@ -28,13 +30,29 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
+    <!-- 파비콘 -->
+    <link rel="icon" sizes="32x32" href="./img/Fabicon3.png" type="image/png">
+
     
 </head>
 <body>
+    <div class="hidden-menu" id="header">
+        <ul class="gnb-hid gfs-didot">
+            <li><a href="#about">about me</a></li>
+            <li><a href="#skill">skills</a></li>
+            <li><a href="#popup">popups</a></li>
+            <li><a href="#poster">posters</a></li>
+            <li><a href="#banner">banners</a></li>
+            <li><a href="#team-project">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </div>
+    
     <main>
         <div class="hero">
         <div class="common-frame hero-section">
-            <h1 class="gfs-didot title bbyong">Filling the world with</h1>
+            <h1 class="gfs-didot title bbyong pc">Filling the world with</h1>
+            <h1 class="gfs-didot title bbyong mo">Filling the<br>world with</h1>
             <p class="allura point-desc bbyong">the beauty I create <span class="year">2025</span></p>
             
             <figure class="hero-video">
@@ -49,194 +67,425 @@
             </div>
         </div>
         </div>
-        <div class="common-frame about">
-            <div class="about-content">
-                <h1 class="gfs-didot abtitle">From Structure<br>to <span class="pointc">Connection</span></h1>
-                <p class="about-sub">기초 위에 감성을 쌓고, 사람과 함께 성장하는 디자이너</p>
-            </div>
-            <div class="about-txt">
-                <h4 class="txt-title pointc">구조를 세우다</h4>
-                <p class="txt1">디자인의 시작은 기초를 세우는 일이라고 생각합니다.
-                정렬, 비율, 여백 같은 기본 원리를 지키며 구조를 설계하고,
-                그 위에 감각적인 요소를 더해 시각적 완성도를 높입니다.</p>
-                <p class="txt2">
-                탄탄한 기반은 안정적인 화면을 만들고,
-                이는 신뢰감 있는 사용자 경험으로 이어집니다.
-                저는 기본기를 꾸준히 점검하며,
-                모든 디자인의 출발점을 ‘구조적 사고’로 두고 있습니다.</p> 
-                <h4 class="txt-title pointc">의도를 보이다</h4>
-                <p class="txt1">디자인은 단순한 시각 표현이 아니라 명확한 전달의 수단이라고 생각합니다.
-                사용자의 시선과 감정의 흐름을 고려해,
-                복잡한 정보를 쉽게 이해할 수 있도록 정리하고 시각화합니다.</p>
-                <p class="txt2"> ‘보여주는 것’보다 ‘전달하는 것’에 초점을 두며,
-                의도와 메시지가 일관되게 느껴지는 디자인을 지향합니다.
-                효율적인 커뮤니케이션이 곧 좋은 디자인의 핵심이라고 생각합니다.
-               </p>
-                <h4 class="txt-title pointc">함께 완성하다</h4>
-                <p class="txt1">좋은 디자인은 혼자 만드는 결과물이 아니라,
-                팀과 함께 완성되는 과정에서 만들어진다고 생각합니다.
-                명확한 의사소통과 피드백을 통해 아이디어를 발전시키고,
-                상대의 관점을 이해하며 더 나은 방향을 함께 찾아갑니다.</p>
-                <p class="txt2">저는 협업 속에서 유연하게 사고하고,
-                공동의 목표를 위해 책임감 있게 일하는 디자이너가 되고자 합니다.
-                </p>
-            </div>
-        </div>
-        <div class="common-frame biography">
-            <div class="biography-content">
-                <h1 class="gfs-didot bio">The Quiet Scen</h1>
-                <p>눈에 띄지 않아도, 장면을 완성시키는 한 조명처럼.
-                    <br> 저는 기본 위에 감성을 쌓고, 함께 빛나는 디자인을 만들고 싶습니다.
-                    <br> 조용하지만 단단한, 그런 장면을 그립니다.</p>
-            </div>
-            <div class="biography-grid">
-                <div>
-                    <p>Eom Hye Kyung</p>
-                    <span>Name</span>
-                </div>
-                
-                <div>
-                    <p>2001.03.29</p>
-                    <span>Birth</span>
-                </div>
-                
-                <div>
-                    <p>INTP</p>
-                    <span>MBTI</span>
-                </div>
 
-                <div>
-                    <p>010.6545.0550</p>
-                    <span>Phone</span>
+        <div class="wrapper-contents">
+            <div class="common-frame btn-menu-wrapper">
+                <!-- <img src="./img/menu.svg" alt="menu-btn"> -->
+                 <div class="btn-menu">
+                     <span class="btn-menu-span">menu</span>
+                 </div>
+            </div>
+            <div class="common-frame about" id="about">
+                <div class="about-content">
+                    <h1 class="gfs-didot abtitle">From Structure<br>to <span class="pointc">Connection</span></h1>
+                    <p class="about-sub">기초 위에 감성을 쌓고,<br class="mo"> 사람과 함께 성장하는 디자이너</p>
+                </div>
+                <div class="about-txt">
+                    <h4 class="txt-title pointc">구조를 세우다</h4>
+                    <p class="txt1">디자인의 시작은 기초를 세우는 일이라고 생각합니다.
+                    정렬, 비율, 여백 같은 기본 원리를 지키며 구조를 설계하고,
+                    그 위에 감각적인 요소를 더해 시각적 완성도를 높입니다.</p>
+                    <p class="txt2">
+                    탄탄한 기반은 안정적인 화면을 만들고,
+                    이는 신뢰감 있는 사용자 경험으로 이어집니다.
+                    저는 기본기를 꾸준히 점검하며,
+                    모든 디자인의 출발점을 ‘구조적 사고’로 두고 있습니다.</p> 
+                    <h4 class="txt-title pointc">의도를 보이다</h4>
+                    <p class="txt1">디자인은 단순한 시각 표현이 아니라 명확한 전달의 수단이라고 생각합니다.
+                    사용자의 시선과 감정의 흐름을 고려해,
+                    복잡한 정보를 쉽게 이해할 수 있도록 정리하고 시각화합니다.</p>
+                    <p class="txt2"> ‘보여주는 것’보다 ‘전달하는 것’에 초점을 두며,
+                    의도와 메시지가 일관되게 느껴지는 디자인을 지향합니다.
+                    효율적인 커뮤니케이션이 곧 좋은 디자인의 핵심이라고 생각합니다.
+                   </p>
+                    <h4 class="txt-title pointc">함께 완성하다</h4>
+                    <p class="txt1">좋은 디자인은 혼자 만드는 결과물이 아니라,
+                    팀과 함께 완성되는 과정에서 만들어진다고 생각합니다.
+                    명확한 의사소통과 피드백을 통해 아이디어를 발전시키고,
+                    상대의 관점을 이해하며 더 나은 방향을 함께 찾아갑니다.</p>
+                    <p class="txt2">저는 협업 속에서 유연하게 사고하고,
+                    공동의 목표를 위해 책임감 있게 일하는 디자이너가 되고자 합니다.
+                    </p>
                 </div>
             </div>
-            <div class="timeline-content">
-                <div class="timeline-table">
-                    <div class="content-list">
-                        <h4>경력</h4>
-                        <p>(주)라라인터내셔널(경리)<br>그린컴퓨터학원 미금점 UI/UX 디자인 및 개발 실무 프로젝트 과정 수료 </p>
-                        <h4>자격증</h4>
-                        <p>GTQ그래픽기술자격 1급-한국생산성본부<br>GTQ일러스트 1급-한국생산성본부</p>
-                    </div>
-                    <p class="allura tlyear">2025</p>
+            <div class="common-frame biography">
+                <div class="biography-content">
+                    <h1 class="gfs-didot bio">The Quiet Scen</h1>
+                    <p>눈에 띄지 않아도, 장면을 완성시키는 한 조명처럼.
+                        <br> 저는 기본 위에 감성을 쌓고, 함께 빛나는 디자인을 만들고 싶습니다.
+                        <br> 조용하지만 단단한, 그런 장면을 그립니다.</p>
                 </div>
-                <div class="timeline-table">
-                    <div class="content-list">
-                        <h4>경력</h4>
-                        <p>(주)농심(생산직)</p>
+                <div class="biography-grid">
+                    <div>
+                        <p>Eom Hye Kyung</p>
+                        <span>Name</span>
                     </div>
-                    <p class="allura tlyear">2023~2024</p>
-                </div>
-                <div class="timeline-table">
-                    <div class="content-list">
-                        <h4>경력</h4>
-                        <p>일룸 AS 부서</p>
+                    
+                    <div>
+                        <p>2001.03.29</p>
+                        <span>Birth</span>
                     </div>
-                    <p class="allura tlyear">2022</p>
-                </div>
-                <div class="timeline-table">
-                    <div class="content-list">
-                        <h4>학력</h4>
-                        <p>신구대학교 중퇴</p>
-                        <h4>경력</h4>
-                        <p>세븐제이스<br>(사무)</p>
+                    
+                    <div>
+                        <p>INTP</p>
+                        <span>MBTI</span>
                     </div>
-                    <p class="allura tlyear">2020~2021</p>
-                </div>
-                <div class="timeline-table">
-                    <div class="content-list">
-                        <h4>학력</h4>
-                        <p>성남금융고등학교 졸업<br>(항공경영학과)</p>
-                        <h4>자격증</h4>
-                        <p>아래 엑셀 A급-한국생산성본부<br>아래 한글 A급-한국생산성본부</p>
+    
+                    <div>
+                        <p>010.6545.0550</p>
+                        <span>Phone</span>
                     </div>
-                    <p class="allura tlyear">2017~2019</p>
                 </div>
-                <div class="timeline-table">
-                    <div class="content-list">
-                        <h4>자격증</h4>
-                        <p>인터넷 B급 - 한국생산성 본부 </p>
+                <div class="timeline-content">
+                    <div class="timeline-table">
+                        <div class="content-list">
+                            <h4>경력</h4>
+                            <p>(주)라라인터내셔널(경리)<br>그린컴퓨터학원 미금점 UI/UX 디자인 및 개발 실무 프로젝트 과정 수료 </p>
+                            <h4>자격증</h4>
+                            <p>GTQ그래픽기술자격 1급-한국생산성본부<br>GTQ일러스트 1급-한국생산성본부</p>
+                        </div>
+                        <p class="allura tlyear">2025</p>
                     </div>
-                    <p class="allura tlyear">2011</p>
+                    <div class="timeline-table">
+                        <div class="content-list">
+                            <h4>경력</h4>
+                            <p>(주)농심(생산직)</p>
+                        </div>
+                        <p class="allura tlyear">2023~2024</p>
+                    </div>
+                    <div class="timeline-table">
+                        <div class="content-list">
+                            <h4>경력</h4>
+                            <p>일룸 AS 부서</p>
+                        </div>
+                        <p class="allura tlyear">2022</p>
+                    </div>
+                    <div class="timeline-table">
+                        <div class="content-list">
+                            <h4>학력</h4>
+                            <p>신구대학교</p>
+                            <h4>경력</h4>
+                            <p>세븐제이스<br>(사무)</p>
+                        </div>
+                        <p class="allura tlyear">2020~2021</p>
+                    </div>
+                    <div class="timeline-table">
+                        <div class="content-list">
+                            <h4>학력</h4>
+                            <p>성남금융고등학교 졸업<br>(항공경영학과)</p>
+                            <h4>자격증</h4>
+                            <p>아래 엑셀 A급-한국생산성본부<br>아래 한글 A급-한국생산성본부</p>
+                        </div>
+                        <p class="allura tlyear">2017~2019</p>
+                    </div>
+                    <div class="timeline-table">
+                        <div class="content-list">
+                            <h4>자격증</h4>
+                            <p>인터넷 B급 - 한국생산성 본부 </p>
+                        </div>
+                        <p class="allura tlyear">2011</p>
+                    </div>
                 </div>
+            </div>
+            <div class="skill" id="skill">
+                <div class="common-frame skilltitle">
+                    <h1 class="gfs-didot skti">Skill & Language</h1>
+                    <p>디자인 툴과 퍼블리싱 언어를 기반으로 화면을 구조화하고 표현할 수 있습니다.<br>
+                    필요한 기술은 빠르게 습득하며, 명확한 커뮤니케이션을 통해 작업 흐름을 자연스럽게 연결합니다.</p>
+                    <div class="skill-content-grid">
+                        <div class="skill-grid">
+                            <p class="deco1">01</p>
+                            <p class="gfs-didot sk-txt">Illustrator</p>
+                            <p>Illustrator를 통해 로고, 아이콘, 인포그래픽 등 다양한 벡터 디자인을 제작할 수 있습니다. 정확한 도형과 선을 활용해 깔끔한 그래픽 작업이 가능합니다. 브랜드 아이덴티티를 시각적으로 표현할 수 있습니다.</p>
+                        </div>
+                        <div class="skill-grid">
+                            <p class="deco1">02</p>
+                            <p class="gfs-didot sk-txt">Photoshop</p>
+                            <p>Photoshop을 통해 이미지를 보정하고 합성하여 시각적인 완성도를 높일 수 있습니다. 배너, 썸네일, 웹 시안을 자유롭게 제작할 수 있습니다. 사진과 그래픽을 조합해 감각적인 디자인을 완성할 수 있습니다.</p>
+                        </div>
+                        <div class="skill-grid">
+                            <p class="deco1">03</p>
+                            <p class="gfs-didot sk-txt">Figma</p>
+                            <p>Figma를 통해 웹과 모바일 인터페이스를 시각적으로 설계할 수 있습니다. 컴포넌트와 프로토타입 기능을 활용해 사용자 흐름을 쉽게 확인할 수 있습니다. 디자이너와 개발자 간의 협업을 효율적으로 진행할 수 있습니다.</p>
+                        </div>
+                        <div class="skill-grid">
+                            <p class="deco1">04</p>
+                            <p class="gfs-didot sk-txt">HTML</p>
+                            <p>HTML을 통해 웹페이지의 기본 구조를 만들 수 있습니다. 콘텐츠를 논리적으로 구분하고 의미를 부여해 접근성 높은 페이지를 설계할 수 있습니다. 디자인 시안을 실제 웹 화면으로 구현하는 기초가 됩니다. </p>
+                        </div>
+                        <div class="skill-grid">
+                            <p class="deco1">05</p>
+                            <p class="gfs-didot sk-txt">CSS</p>
+                            <p>CSS를 통해 웹페이지의 시각적 스타일을 자유롭게 표현할 수 있습니다. 색상, 폰트, 레이아웃을 조정해 디자인 의도를 정확히 전달할 수 있습니다. 다양한 디바이스에 맞춘 반응형 웹 디자인을 구현할 수 있습니다.</p>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="common-frame popup" id="popup">
+                <div class="popup-title">
+                    <h1 class="gfs-didot pop-tl">Popus.</h1>
+                    <p>순간의 시선을 사로잡기 위해 제작한 이벤트·프로모션 배너들입니다.<br>컨셉마다 다른 분위기를 담되, 브랜드의 일관성은 유지하고자 했습니다.<br>짧은 문구와 이미지를 통해 이야기가 전달될 수 있도록 구성의 흐름과 시각적 균형에 집중했습니다.</p>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper popup-slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <figure><img src="./img/popup1.jpg" alt="팝업1 이미지 - 나이키 팝업 할인행사 이미지">
+                        </figure>
+                        <h4>NIKE Air Force Cloud Promotion</h4>
+                        <p>몽글한 구름 텍스처와 나이키 에어포스의 실루엣을 조합해, 가벼움과 산뜻함을 강조한 프로모션 배너입니다.</p></div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="./img/popup2.jpg" alt="팝업2 이미지 - 독점온라인 30%세일 행사 이미지">
+                        </figure>
+                        <h4>Minimal Serif Sale Pop Event</h4>
+                        <p>과감한 세리프 타이포를 중심으로 구성한 미니멀 세일 배너로, 시각적 대비를 통해 고급스러운 무드를 강조했습니다.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="./img/popup3.jpg" alt="팝업3 이미지 - 블랙프라이데이 할인 행사 이미지">
+                        </figure>
+                        <h4>Black Friday Character Pop Event</h4>
+                        <p>캐릭터 일러스트와 밝은 컬러를 사용해 블랙프라이데이의 활기와 재미를 강조한 이벤트 배너입니다.</p>
+                        </div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="./img/popup4.jpg" alt="팝업4 이미지 - 크리스마스 홀리데이 할인행사 이미지">
+                        </figure>
+                        <h4>Christmas Special Event Banner</h4>
+                        <p>크리스마스 오브젝트를 패턴처럼 활용해 따뜻하고 풍성한 연말 분위기를 표현한 프로모션 배너입니다.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure><img src="./img/popup5.jpg" alt="팝업5 이미지 - 쇼핑백 & 기프트 메시지 이벤트 이미지"></figure>
+                        <h4>Shopping Bag Gift Message Design</h4>
+                        <p>심플한 구성과 시그니처 와펜 디테일을 강조하여, 브랜드의 정갈한 감성을 담아낸 기프트 메시지 배너입니다.</p>
+                    </div>
+                </div>
+                </div>
+            </div>   
+            <div class="common-frame poster" id="poster">
+                <div class="poster-title">
+                    <h1 class="gfs-didot poster-tl">Poster.</h1>
+                    <p>다양한 주제와 분위기를 시각적으로 해석한 포스터 작업들로, 브랜드 아이덴티티·환경 메시지·감성적 무드 등 각 콘셉트에 맞는 이미지를 디자인했습니다.<br>색감, 타이포그래피, 구성 방식의 변주를 통해 각기 다른 느낌을 전달하며, 주제에 자연스럽게 맞는 시각적 경험을 만드는 데 집중했습니다.</p>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper poster-slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <p class="gfs-didot nb">01</p>
+                        <figure><img src="./img/poster1.jpg" alt="포스터이미지1 - 오설록 TEA FROM JEJU 포스터">
+                        </figure>
+                        <h4>오설록 TEA FROM JEJU 포스터</h4>
+                        <p>제주의 자연 풍경을 메인 비주얼로 사용해 차 브랜드의 고요하고 깊은 이미지를 표현한 포스터입니다. 
+                        안개 낀 산과 자연의 색감을 강조해 브랜드의 정체성과 차의 순수함을 담았습니다.</p>
+                    </div>
+                    <div class="swiper-slide sy">
+                        <figure>
+                            <p class="gfs-didot nb">02</p>
+                            <img src="./img/poster2.jpg" alt="포스터이미지2 - 오설록 TEA FROM JEJU 포스터">
+                        </figure>
+                        <h4>SUMMER MUSIC FESTIVAL 2025 포스터</h4>
+                        <p>빈티지 카세트를 메인 소재로 사용해 레트로 감성을 담아낸 여름 음악 페스티벌 포스터입니다. 
+                        구름 위에 떠 있는듯한 비주얼로 자유롭고 밝은 분위기를 표현하고, 시즌 무드를 시원하게 전달합니다.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="gfs-didot nb">03</p>
+                        <figure>
+                            <img src="./img/poster3.jpg" alt="포스터이미지3 -OCEANARIUM LIFE IN OCEAN 포스터">
+                        </figure>
+                        <h4>OCEANARIUM LIFE IN OCEAN 포스터</h4>
+                        <p>심해 속 물고기의 유영을 강조한 비주얼 포스터로, 투명하고 흐르는 듯한 형태감을 통해 생동감 있는 수중 세계를 표현했습니다.
+                        타이포그래피를 입체적으로 배치해 몰입감을 높였습니다.</p>
+                        </div>
+                    <div class="swiper-slide sy">
+                        <p class="gfs-didot nb">04</p>
+                        <figure>
+                            <img src="./img/poster4.jpg" alt="포스터이미지4 - THERE IS NO PLANET B 포스터">
+                        </figure>
+                        <h4>THERE IS NO PLANET B 포스터</h4>
+                        <p>지구 환경 보호 메시지를 직관적으로 전달하는 캠페인 포스터입니다. 
+                        지구를 식품 포장처럼 표현해 환경 위기의 현실성을 강조했으며, 강한 대비의 타이포그래피로 경각심을 시각적으로 전달했습니다.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="tebanner" id="banner">
+                <div class="common-frame te-title">
+                    <h1 class="gfs-didot te-tl">Theme Banner</h1>
+                    <p>브랜드 프로모션과 시즌 캠페인을 중심으로 제작한 테마 배너 작업입니다.<br>대형 타이포그래피와 명확한 메시지 구조를 사용해 시각적 임팩트를 높였으며, 각 브랜드의 분위기에 맞춘 컬러와 오브젝트를 활용해 콘셉트별 무드를 효과적으로 표현했습니다.</p>
+                </div>
+                <div class="swiper tebanner-wrap">
+                    <div class="swiper-wrapper tebanner-train">
+                        <div class="swiper-slide tebanner-list">
+                            <figure>
+                                <img src="./img/te-banner1.jpg" alt="테마배너이미지 - BLACK FRIDAY 2025 배너">
+                            </figure>
+                            <section class="common-frame tebanner-dp">
+                                <h4>BLACK FRIDAY 2025 배너</h4>
+                                <p>블랙프라이데이 콘셉트의 시즌 프로모션 배너로, 투명한 ‘2025’ 숫자와 명품 오브젝트를 조합해 고급스러운 분위기를 연출했습니다. <br>미니멀한 흑백 대비로 세일 메시지를 명확하게 전달하며, 브랜드 무드를 시각적으로 강화했습니다. </p>
+                            </section>
+                        </div>
+                        <div class="swiper-slide tebanner-list">
+                            <figure>
+                                <img src="./img/te-banner2.jpg" alt="테마배너이미지 - NIKE 프로모션 배너">
+                            </figure>
+                            <section class="common-frame tebanner-dp">
+                                <h4>NIKE 프로모션 배너</h4>
+                                <p>시그니처 블루 컬러와 대형 타이포그래피로 제품을 강조한 프로모션 배너입니다.<br>
+                                할인 정보와 기간을 직관적으로 전달해 시각적 임팩트를 높였습니다.</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="esbanner">
+                <div class="common-frame es-title">
+                    <h1 class="gfs-didot es-tl">ESTÉE LAUDER<br>Brand Banner</h1>
+                    <p>에스티로더의 다채로운 제품 라인업을 기반으로 감각적인 브랜드 배너를 디자인했습니다.<br> 
+                    각 제품의 고유한 분위기와 기능을 시각적으로 해석하여, 컬러·조명·텍스처 중심의 레이아웃으로 프리미엄한 브랜드 아이덴티티를 강조했습니다.<br>
+                    제품마다 다른 무드를 유지하면서도 전체적으로 일관된 고급스러운 톤을 유지하는 데 집중했습니다.</p>
+                </div>
+                <div class="swiper esbanner-wrap">
+                    <div class="swiper-wrapper esbanner-train">
+                        <div class="swiper-slide esbanner-list">
+                            <figure>
+                                <img src="./img/es-banner1.jpg" alt="에스티로더 배너이미지 - Tender Light Eau de Parfum 배너">
+                            </figure>
+                            <section class="common-frame esbanner-dp">
+                                <h4>Tender Light Eau de Parfum</h4>
+                                <p>햇빛에서 영감을 받은 따뜻하고 긍정적인 향을 표현한 배너로, 화이트 플라워 이미지를 활용해 순수함과 우아함을 담았습니다.밝고 기분 좋은 무드를 시각적으로 전달하는 구성이 특징입니다.</p>
+                            </section>
+                        </div>
+                        <div class="swiper-slide esbanner-list">
+                            <figure>
+                                <img src="./img/es-banner2.jpg" alt="에스티로더 배너이미지 - Double Wear Zero-Smudge Lengthening Mascara 배너">
+                            </figure>
+                            <section class="common-frame esbanner-dp">
+                                <h4>Double Wear 
+                                Zero-Smudge Lengthening Mascara</h4>
+                                <p>오랜 시간 번짐 없이 또렷한 속눈썹을 유지해주는 더블웨어 마스카라의 장점을 강조한 배너입니다.<br> 
+                                날렵한 모델 이미지와 직선적인 레이아웃으로 제품의 깔끔하고 지속력 높은 특징을 표현했습니다.</p>
+                            </section>
+                        </div>
+                        <div class="swiper-slide esbanner-list">
+                            <figure>
+                                <img src="./img/es-banner3.jpg" alt="에스티로더 배너이미지 - Advanced Night Repair 배너">
+                            </figure>
+                            <section class="common-frame esbanner-dp">
+                                <h4>Advanced Night Repair</h4>
+                                <p>피부 본연의 에너지를 깨우는 어드밴스드 나이트 리페어의 핵심 효과를 담아낸 배너입니다.<br> 
+                                어두운 배경과 빛을 머금은 모델 컷을 조합해 밤 사이의 집중 케어 이미지를 강조했습니다.</p>
+                            </section>
+                        </div>
+                        <div class="swiper-slide esbanner-list">
+                            <figure>
+                                <img src="./img/es-banner4.jpg" alt="에스티로더 배너이미지 - Lauder Pleasures for Men 배너">
+                            </figure>
+                            <section class="common-frame esbanner-dp">
+                                <h4>Lauder Pleasures for Men</h4>
+                                <p>차분하면서도 강렬한 남성 향수의 특성을 담은 배너로, 모노톤 인물 이미지와 투명한 옅은 그린의 병 디자인을 대비시켜 시크하고 모던한 분위기를 연출했습니다.</p>
+                            </section>
+                        </div>
+                        <div class="swiper-slide esbanner-list">
+                            <figure>
+                                <img src="./img/es-banner5.jpg" alt="에스티로더 배너이미지 - Pure Color Melt-On Glossstick Lip Gloss">
+                            </figure>
+                            <section class="common-frame esbanner-dp">
+                                <h4>Pure Color Melt-On Glossstick Lip Gloss</h4>
+                                <p>입술에 닿는 순간 부드럽게 녹아드는 텍스처의 글로스틱으로, 반짝이는 플럼핑 효과와 선명한 컬러를 강조한 비주얼 배너입니다.제품의 윤기와 생기를 강렬한 레드 톤과 함께 표현했습니다.</p>
+                            </section>
+                        </div>
+                        <div class="swiper-slide esbanner-list">
+                            <figure>
+                                <img src="./img/es-banner6.jpg" alt="에스티로더 배너이미지 - Re-Nutriv Radiance UV Fluid">
+                            </figure>
+                            <section class="common-frame esbanner-dp">
+                                <h4>Re-Nutriv Radiance UV Fluid</h4>
+                                <p>5중 UV 필터로 자외선을 강력하게 차단하면서도 피부에는 순하게 작용하는 리-뉴트리브 UV 플루이드의 핵심 특징을 강조한 배너입니다. 고급스러운 골드 톤과 극적인 조명으로 제품의 프리미엄 이미지를 강화했습니다.</p>
+                            </section>
+                        </div>
+                        <div class="swiper-slide esbanner-list">
+                            <figure>
+                                <img src="./img/es-banner7.jpg" alt="에스티로더 배너이미지 - Advanced Night Repair">
+                            </figure>
+                            <section class="common-frame esbanner-dp">
+                                <h4>Advanced Night Repair</h4>
+                                <p>피트리플 에너지 리페어 효과를 강조한 스킨케어 배너로, 제품의 고급스러운 텍스처와 골드 톤을 중심으로 밤 사이 집중 케어의 이미지를 표현했습니다. 공중에 떠 있는 용기 디테일을 통해 제품의 핵심 기능과 프리미엄 이미지를 시각적으로 강화했습니다.</p>
+                            </section>
+                        </div>
+                        <div class="swiper-slide esbanner-list">
+                            <figure>
+                                <img src="./img/es-banner8.jpg" alt="에스티로더 배너이미지 - Pure Color Explicit Silk Matte Lipstick 배너">
+                            </figure>
+                            <section class="common-frame esbanner-dp">
+                                <h4>Pure Color Explicit Silk Matte Lipstick</h4>
+                                <p>초정밀함과 고강도 발색을 특징으로 하는 실크 매트 립스틱을 강조한 배너입니다.  
+                                제품이 그려낸 텍스처 디테일을 크게 부각해 선명한 컬러감과 럭셔리한 무드를 시각적으로 전달했습니다.</p>
+                            </section>
+                        </div>
+                        <div class="swiper-slide esbanner-list">
+                            <figure>
+                                <img src="./img/es-banner9.jpg" alt="에스티로더 배너이미지 - Pure Color Explicit Silk Matte Lipstick 배너">
+                            </figure>
+                            <section class="common-frame esbanner-dp">
+                                <h4>Double Wear – Hydrating Primer</h4>
+                                <p>더블웨어 플로리스 하이드레이팅 프라이머의 깨끗하고 생기 있는 피부 표현을 강조한 비주얼 배너입니다. 선명한 블루 톤 배경과 모델의 클로즈업 컷을 활용해 제품의 수분감과 투명한 광채 이미지를 현대적으로 표현했습니다.</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-project" id="team-project">
+            <div class="roject-wrap">
+                <div class="common-frame pr-title pr1">
+                    <h3 class="gfs-didot">project.</h3>
+                    <p>브랜드 웹사이트를 반응형 기반으로 재구성한 팀 프로젝트입니다.<br>제공된 와이어프레임을 기반으로 UX/UI 흐름을 정리하고 시각적 톤을 확장했습니다.<br>배너 디자인과 프로토타입 화면 제작을 담당했으며, 브랜드스토리 페이지의 뎁스를 포함한 
+                     반응형 구조를 설계했습니다. 기기별 화면에서도 일관된 사용자 경험을 제공하는 디자인을 구현했습니다.</p>
+                </div>
+                <section class="project-frame">
+                    <ul class="common-frame project-sticky-menu">
+                        <li><a href="https://esteelauder.dothome.co.kr/" target="_blank">New Branding Web</a></li>
+                        <li><a href="https://www.figma.com/design/T4HpOzaPMUOpKdeeR0RJjR/에스티로더-비삼?node-id=0-1&t=QPtVjDGwusrp9vur-1" target="_blank">Prototype</a></li>
+                        <li><a href="https://www.figma.com/design/3TEWB50jQA0NtZYxK1Q2iS/%EC%97%90%EC%8A%A4%ED%8B%B0%EB%A1%9C%EB%8D%94-%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?node-id=0-1&t=ZXixwDYzE9fVdd6W-1"target="_blank">Wireframe</a></li>
+                    </ul>
+                    <figure class="project-img">
+                        <picture>
+                            <source media="(max-width:768px)" srcset="./img/Estee_Details_Page_768.jpg">
+                            <img src="./img/Estee_Details_Page.jpg" alt="팀프로젝트 에스티로더 상세페이지 이미지">
+                        </picture>
+                    </figure>
+                </section>
+                <div class="common-frame pr-title pr2">
+                    <h3 class="gfs-didot">Project.</h3>
+                    <p>베이커리 브랜드의 감성과 사용자 흐름을 중심으로 제작한 단독 반응형 웹 프로젝트입니다.<br>와이어프레임 구성부터 전체 UI 디자인·비주얼 톤 확립·프로토타입 제작까지 모든 디자인 과정을 직접 진행했습니다.<br>브랜드스토리 페이지의 뎁스를 포함한 반응형 구조를 설계하여,<br>기기별 화면에서도 일관된 브랜드 경험과 자연스러운 사용자 흐름을 구현했습니다.</p>
+                </div>
+                <section class="project-frame">
+                    <ul class="common-frame project-sticky-menu">
+                        <li><a href="https://slowmomo.dothome.co.kr/" target="_blank">New Branding Web</a></li>
+                        <li><a href="https://www.figma.com/design/NIe8eQ9mGLBTaWHPUex6Dw/slow-momo?node-id=0-1&t=OR29dZxJ6SmneNp7-1" target="_blank">Prototype</a></li>
+                        <li><a href="https://www.figma.com/design/KA6d7zrcRlF1jNAsHox24D/%EC%8A%AC%EB%A1%9C%EC%9A%B0%EB%AA%A8%EB%AA%A8-%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?node-id=0-1&t=EypOY0vmS5ITQbQ5-1"target="_blank">Wireframe</a></li>
+                    </ul>
+                    <figure class="project-img">
+                        <picture>
+                            <source media="(max-width:768px)" srcset="./img/slowmomo_Details_Page_768.jpg">
+                            <img src="./img/slowmomo_Details_Page.jpg" alt="slow momo 상세페이지 이미지">
+                        </picture>
+                    </figure>
+                </section>
             </div>
         </div>
-        <div class="skill">
-            <div class="common-frame skilltitle">
-                <h1 class="gfs-didot skti">Skill & language</h1>
-                <p>디자인 툴과 퍼블리싱 언어를 기반으로 화면을 구조화하고 표현할 수 있습니다.<br>
-                필요한 기술은 빠르게 습득하며, 명확한 커뮤니케이션을 통해 작업 흐름을 자연스럽게 연결합니다.</p>
-                <div class="skill-content-grid">
-                    <div class="skill-grid">
-                        <p>01</p>
-                        <p class="gfs-didot sk-txt">Illustrator</p>
-                        <p>Illustrator를 통해 로고, 아이콘, 인포그래픽 등 다양한 벡터 디자인을 제작할 수 있습니다. 정확한 도형과 선을 활용해 깔끔한 그래픽 작업이 가능합니다. 브랜드 아이덴티티를 시각적으로 표현할 수 있습니다.</p>
-                    </div>
-                    <div class="skill-grid">
-                        <p>02</p>
-                        <p class="gfs-didot sk-txt">Photoshop</p>
-                        <p>Photoshop을 통해 이미지를 보정하고 합성하여 시각적인 완성도를 높일 수 있습니다. 배너, 썸네일, 웹 시안을 자유롭게 제작할 수 있습니다. 사진과 그래픽을 조합해 감각적인 디자인을 완성할 수 있습니다.</p>
-                    </div>
-                    <div class="skill-grid">
-                        <p>03</p>
-                        <p class="gfs-didot sk-txt">Figma</p>
-                        <p>Figma를 통해 웹과 모바일 인터페이스를 시각적으로 설계할 수 있습니다. 컴포넌트와 프로토타입 기능을 활용해 사용자 흐름을 쉽게 확인할 수 있습니다. 디자이너와 개발자 간의 협업을 효율적으로 진행할 수 있습니다.</p>
-                    </div>
-                    <div class="skill-grid">
-                        <p>04</p>
-                        <p class="gfs-didot sk-txt">HTML</p>
-                        <p>HTML을 통해 웹페이지의 기본 구조를 만들 수 있습니다. 콘텐츠를 논리적으로 구분하고 의미를 부여해 접근성 높은 페이지를 설계할 수 있습니다. 디자인 시안을 실제 웹 화면으로 구현하는 기초가 됩니다. </p>
-                    </div>
-                    <div class="skill-grid">
-                        <p>05</p>
-                        <p class="gfs-didot sk-txt">CSS</p>
-                        <p>CSS를 통해 웹페이지의 시각적 스타일을 자유롭게 표현할 수 있습니다. 색상, 폰트, 레이아웃을 조정해 디자인 의도를 정확히 전달할 수 있습니다. 다양한 디바이스에 맞춘 반응형 웹 디자인을 구현할 수 있습니다.</p>
-                    </div>
-            </div>
-            </div>
-        </div>
-        <div class="common-frame popup">
-            <div class="popup-title">
-                <h1 class="gfs-didot pop-tl">POPUPS</h1>
-                <p>순간의 시선을 사로잡기 위해 제작한 이벤트·프로모션 배너들입니다.<br>컨셉마다 다른 분위기를 담되, 브랜드의 일관성은 유지하고자 했습니다.<br>짧은 문구와 이미지를 통해 이야기가 전달될 수 있도록 구성의 흐름과 시각적 균형에 집중했습니다.</p>
-            </div>
-            <!-- Slider main container -->
-            <div class="swiper popup-slider">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <figure><img src="./img/popup1.jpg" alt="팝업1 이미지 - 나이키 팝업 할인행사 이미지">
-                    </figure>
-                    <h4>NIKE Air Force Cloud Promotion</h4>
-                    <p>몽글한 구름 텍스처와 나이키 에어포스의 실루엣을 조합해, 가벼움과 산뜻함을 강조한 프로모션 배너입니다.</p></div>
-                <div class="swiper-slide">
-                    <figure>
-                        <img src="./img/popup2.jpg" alt="팝업2 이미지 - 독점온라인 30%세일 행사 이미지">
-                    </figure>
-                    <h4>Minimal Serif Sale Pop Event</h4>
-                    <p>과감한 세리프 타이포를 중심으로 구성한 미니멀 세일 배너로, 시각적 대비를 통해 고급스러운 무드를 강조했습니다.</p>
-                </div>
-                <div class="swiper-slide">
-                    <figure>
-                        <img src="./img/popup3.jpg" alt="팝업3 이미지 - 블랙프라이데이 할인 행사 이미지">
-                    </figure>
-                    <h4>Black Friday Character Pop Event</h4>
-                    <p>캐릭터 일러스트와 밝은 컬러를 사용해 블랙프라이데이의 활기와 재미를 강조한 이벤트 배너입니다.</p>
-                    </div>
-                <div class="swiper-slide">
-                    <figure>
-                        <img src="./img/popup4.jpg" alt="팝업4 이미지 - 크리스마스 홀리데이 할인행사 이미지">
-                    </figure>
-                    <h4>Christmas Special Event Banner</h4>
-                    <p>크리스마스 오브젝트를 패턴처럼 활용해 따뜻하고 풍성한 연말 분위기를 표현한 프로모션 배너입니다.</p>
-                </div>
-                <div class="swiper-slide">
-                    <figure><img src="./img/popup5.jpg" alt="팝업5 이미지 - 쇼핑백 & 기프트 메시지 이벤트 이미지"></figure>
-                    <h4>Shopping Bag Gift Message Design</h4>
-                    <p>심플한 구성과 시그니처 와펜 디테일을 강조하여, 브랜드의 정갈한 감성을 담아낸 기프트 메시지 배너입니다.</p>
-                </div>
-            </div>
+        <div class="common-frame contact" id="contact">
+            <p class="gfs-didot">WEB DESIGN</p>
+            <h1 class="gfs-didot">THANK YOU<br>FOR<br>WATCHING</h1>
+            <div class="contact-txt">
+            <p class="gfs-didot">FEEL FREE TO SAY HELLO</p>
+            <p class="gfs-didot">010.6545.0550</p>
+            <p class="gfs-didot">bboppq@gmail.com</p>
             </div>
         </div>
         <script>
@@ -256,6 +505,74 @@
                     slidesPerView: 4,
                     spaceBetween: 20,
                     },
+                },
+            })
+        </script>
+        <script>
+            const posterSlider = new Swiper(".poster-slider",{
+                slidesPerView: 1.2,
+                spaceBetween: 14,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    768: {
+                    slidesPerView: 3.2,
+                    spaceBetween: 18,
+                    },
+                    1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    },
+                },
+            })
+        </script>
+        <script>
+            const tebannerSlider = new Swiper(".tebanner-wrap",{
+                slidesPerView: 1,
+                spaceBetween: 14,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    768: {
+                    slidesPerView: 1,
+                    spaceBetween: 18,
+                    },
+                    1024: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    },
+                },
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+            })
+        </script>
+         <script>
+            const esbannerSlider = new Swiper(".esbanner-wrap",{
+                slidesPerView: 1,
+                spaceBetween: 14,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    768: {
+                    slidesPerView: 1,
+                    spaceBetween: 18,
+                    },
+                    1024: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    },
+                },
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
                 },
             })
         </script>

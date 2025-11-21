@@ -20,4 +20,7 @@
     .about-txt {
     flex: 8;
 }
+    .pr-title{
+        flex-direction: column;
+    }
 }
