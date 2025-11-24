@@ -47,6 +47,25 @@
     .hero-video {
         
     }
+.pr-title h3 {
+    font-size: 2.5rem;
+    flex: 5;
+}
+.contact h1 {
+    font-size: 2.5rem;
+}
+    .project-sticky-menu {
+        display: flex;
+        gap: 0.5rem 0.5rem;
+        position: sticky;
+        left: 0;
+        top: 3rem;
+        margin-top: 4rem;
+        justify-content: flex-start;
+        margin-bottom: 2rem;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
     .about {
         margin-top: 12rem;
         display: flex;

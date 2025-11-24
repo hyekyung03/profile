@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             mobileState = false
             btnMenuImg.innerHTML = "menu"
             // btnMenuImg.setAttribute("src","./img/menu.svg")
+            btnMenu.classList.remove("fixed")
         }else{
             // 마우스 휠을 아래로 굴렸을 때
             header.classList.remove("fadein")
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             mobileState = false
             btnMenuImg.innerHTML = "menu"
             // btnMenuImg.setAttribute("src","./img/menu.svg")
+            btnMenu.classList.remove("fixed")
         }
         lastScrollTop = scrollTop
     })
@@ -38,11 +40,13 @@ document.addEventListener("DOMContentLoaded",()=>{
             header.classList.add("fadein")    
             mobileState = true
             btnMenuImg.innerHTML = "close"
+            btnMenu.classList.add("fixed")
         }else{
             // 메뉴를 닫는 경우
             header.classList.remove("fadein")    
             mobileState = false
             btnMenuImg.innerHTML = "menu"
+            btnMenu.classList.remove("fixed")
         }
         
     })

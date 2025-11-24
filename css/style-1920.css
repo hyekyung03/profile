@@ -109,6 +109,8 @@
     top: 0;
     width: 100%;
     background-color: #fff;
+    padding: 2rem 0;
+    margin-bottom: 6rem;
 }
 .biography-grid {
     display: flex;
@@ -123,7 +125,7 @@
 .biography-content p {
     line-height: 1.5;
     font-size: 1rem;
-    margin-bottom: 6rem;
+    
 }
 .biography-grid p{
     font-size: 1.5rem;
@@ -338,6 +340,10 @@
     font-size: 0.8rem;
     filter: drop-shadow(2px 4px 24px rgba(0,0,0,0.15));
 }
+.btn-menu.fixed{
+    position: fixed;
+    top: -2.5rem;
+}
 
 .btn-menu span {
     position: sticky;
@@ -410,6 +416,7 @@
     border: 1px solid #000;
     border-radius: 50px;
     color: #000;
+    font-size: 0.8rem;
 }
 .project-sticky-menu a:hover{
     border: 1px solid #000;
